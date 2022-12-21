@@ -8,12 +8,28 @@
         line-height: 2.2rem;
         margin-left: 15px;
     }
+    @media(max-width: 1200px) {
+        span {
+            font-size: 1.8rem;
+        }
+    }
+    @media(max-width: 991px) {
+        justify-content: center;
+    }
+    @media(max-width: 560px) {
+        span {
+            font-size: 1.6rem;
+        }
+    }
 }
 
 h1 {
     font-weight: 700;
     font-size: 12.4rem;
     line-height: 97.5%;
+    @media(max-width: 1200px) {
+        font-size: 10rem;
+    }
 }
 
 h2 {
@@ -42,6 +58,9 @@ p {
         justify-content: center;
         overflow: hidden;
         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             transition: transform .4s ease;
         }
 
@@ -82,5 +101,10 @@ p {
                 opacity: 1;
             }
         }
+    }
+    @media(max-width: 991px) {
+       .image {
+        height: 44rem;
+       } 
     }
 }
